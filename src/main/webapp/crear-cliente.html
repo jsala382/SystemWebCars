@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Clientes</title>
+</head>
+<body>
+<div>
+    <form action="/SystemWebCars/crear-clientes" method="post">
+        <h2>Formulario de clientes</h2>
+        <div>
+            <label for="cedula">No.Cedula&ensp;</label>
+            <input type="text" name="cedula" id="cedula">
+        </div>
+
+        <div>
+            <label for="nombres"> <br> Nombres&ensp;</label>
+            <input type="text" name="nombres" id="nombres">
+        </div>
+
+        <div>
+            <label> <br> Genero &ensp;</label>
+            <div>
+                <label> <br> Masculino &ensp;</label>
+                <input type="radio" name="genero" value="Masculino">
+                <label> <br> Femenino &ensp;</label>
+                <input type="radio" name="genero" value="Femenino">
+            </div>
+        </div>
+
+        <div>
+            <label> <br> Estado civil&ensp;</label>
+            <select name="estado_civil">
+                <option value="">--------seleccionar----------</option>
+                <option value="Soltero">Soltero</option>
+                <option value="Casado">Casado</option>
+                <option value="Viudo">Viudo</option>
+                <option value="Divorciado">Divorciado</option>
+            </select>
+        </div>
+
+        <div>
+            <label> <br>  Tipo de documento &ensp;</label>
+            <select name="tipo_documentos">
+                <option value="">--------seleccionar----------</option>
+                <option value="Cedula">Cedula</option>
+                <option value="Pasaporte">Pasaporte</option>
+                <option value="Papeleta de votacion">Papeleta de votacion</option>
+                <option value="Licencia de conducir">Licencia de conducir</option>
+            </select>
+        </div>
+
+
+        <div>
+            <label for="direccion"> <br> Direccion &ensp;</label>
+            <input type="text" name="direccion" id="direccion">
+        </div>
+
+
+        <div>
+            <label for="telefono"> <br> Telefono &ensp;</label>
+            <input type="text" name="telefono" id="telefono">
+        </div>
+
+        <div>
+            <label> <br> Provincia &ensp;</label>
+            <select name="provincia">
+                <option value="">--------seleccionar----------</option>
+                <option value="AZ">Azuay</option>
+                <option value="GUA">Guayas</option>
+                <option value="PICH">Pichincha</option>
+                <option value="TUN">Tungurahua</option>
+                <option value="CHIM">Chimborazo</option>
+            </select>
+
+        </div>
+
+        <div>
+            <label> <br> Ciudad &ensp;</label>
+            <select name="ciudad">
+                <option value="">--------seleccionar----------</option>
+                <option value="CUEN">Cuenca</option>
+                <option value="GYE">Guayaquil</option>
+                <option value="UIO">Quito</option>
+                <option value="AMBT">Ambato</option>
+                <option value="RIOB">Riobamba</option>
+            </select>
+        </div>
+
+
+
+        <div>
+            <input type="submit" value="Guardar" class="btn btn-primary">
+        </div>
+
+
+    </form>
+</div>
+</body>
+</html>
